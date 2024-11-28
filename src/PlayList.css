@@ -1,0 +1,325 @@
+/* @font-face {
+    font-family: "DungGeunMo";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* * {
+    font-family: DungGeunMo;
+    font-size: 22px;
+}
+
+body {
+    margin: 40px;
+    background-color: black;
+} */
+
+.container .playList {
+    margin: 10% 6%;
+}
+
+.box__outside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: fit-content;
+    border: solid 4px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.margin {
+    margin: 20px;
+}
+
+.container__status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    margin-top: 60px;
+}
+
+.container__status-bar h1 {
+    font-size: 35px;
+}
+
+.empty {
+    height: 40px;
+    width: 40px;
+}
+
+.container__album {
+    width: 350px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.container__album-photo {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10%;
+    border: solid 3px lightgray;
+    background-image: url(../src/assets/img/main_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container__album-name {
+    margin-left: 20px;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container__album-name h1 {
+    height: 30px;
+    font-size: 40px;
+}
+
+.container__album-name h4 {
+    height: 5px;
+}
+
+.container__functions {
+    width: 350px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__functions h2 {
+    font-size: 30px;
+}
+
+.btn__play {
+    width: 170px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 5px black;
+    border: solid 3px black;
+}
+
+.btn__play:hover {
+    background-color: mediumslateblue;
+}
+
+.btn__play i {
+    margin-right: 10px;
+}
+
+.btn__heart {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 5px black;
+    border: solid 3px black;
+}
+
+.btn__heart.active,
+.btn__heart:hover {
+    background-color: palevioletred;
+}
+
+.btn__plus {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 5px black;
+    border: solid 3px black;
+}
+
+.btn__plus.active,
+.btn__plus:hover {
+    background-color: powderblue;
+}
+
+.container__list {
+    width: 350px;
+    height: fit-content;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container__detail h2 {
+    font-size: 28px;
+}
+
+.box__color {
+    width: 60px;
+    height: 60px;
+    border: solid 3px lightgray;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+.container__music-box .box__color.classic {
+    background-image: url('./assets/song/classic.jpg');
+}
+
+.container__music-box .box__color.flyAway {
+    background-image: url('./assets/song/flyAway.jpg');
+}
+
+.container__music-box .box__color.rewrite {
+    background-image: url('./assets/song/rewrite.jpg');
+}
+
+.container__music-box .box__color.meet {
+    background-image: url('./assets/song/meet.jpg');
+}
+
+.container__music-box .box__color.destiny {
+    background-image: url('./assets/song/destiny.jpg');
+}
+
+.container__music-box .box__color.mangrove {
+    background-image: url('./assets/song/mangrove.jpg');
+}
+
+.container__music-box .box__color.sherlock {
+    background-image: url('./assets/song/sherlock.jpg');
+}
+
+.container__music-box .box__color.winter {
+    background-image: url('./assets/song/winter.jpg');
+}
+
+.container__music-box .box__color.renegades {
+    background-image: url('./assets/song/renegades.jpg');
+}
+
+.container__music-box .box__color.drowning {
+    background-image: url('./assets/song/drowning.jpg');
+}
+
+.container__music-box .box__color.rising {
+    background-image: url('./assets/song/rising.jpg');
+}
+
+.container__music-box .box__color.rain {
+    background-image: url('./assets/song/rain.jpg');
+}
+
+.container__music-box .box__color.standup {
+    background-image: url('./assets/song/standup.jpg');
+}
+
+.container__music-box .box__color.time {
+    background-image: url('./assets/song/time.jpg');
+}
+
+.container__music-box .box__color.zei {
+    background-image: url('./assets/song/zei.jpg');
+}
+
+.container__music-box .box__color.alive {
+    background-image: url('./assets/song/alive.jpg');
+}
+
+.container__music-box .box__color.villain {
+    background-image: url('./assets/song/villain.jpg');
+}
+
+.container__music-box .box__color.wine {
+    background-image: url('./assets/song/wine.jpg');
+}
+
+.container__music-box .box__color.brilliance {
+    background-image: url('./assets/song/brilliance.jpg');
+}
+
+.container__music-box .box__color.cheek {
+    background-image: url('./assets/song/cheek.jpg');
+}
+
+.container__music-box .box__color.ourNight {
+    background-image: url('./assets/song/ourNight.jpg');
+}
+
+.container__music-box .box__color.unholy {
+    background-image: url('./assets/song/unholy.JPG');
+}
+
+.container__music-box .box__color.star {
+    background-image: url('./assets/song/star.jpg');
+}
+
+.container__music-box .box__color.monster {
+    background-image: url('./assets/song/monster.jpg');
+}
+
+.container__music-box .box__color.boogie {
+    background-image: url('./assets/song/boogie.jpg');
+}
+
+.container__music-box .box__color.spring {
+    background-image: url('./assets/song/spring.jpg');
+}
+
+.container__music-box .box__color.rock {
+    background-image: url('./assets/song/rock.jpg');
+}
+
+.container__music-box .box__color.yb {
+    background-image: url('./assets/song/yb.jpg');
+}
+
+.container__music-box .box__color.romantic {
+    background-image: url('./assets/song/romantic.jpg');
+}
+
+.container__music-box .box__color.good {
+    background-image: url('./assets/song/good.jpg');
+}
+
+
+.container__music-box {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container__music-box h2 {
+    height: 15px;
+}
+
+.container__music-box span {
+    height: 10px;
+    color: gray;
+}
+
+.container__detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
